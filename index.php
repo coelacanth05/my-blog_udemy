@@ -24,9 +24,6 @@
 </head>
 
 <body>
-
-  <?php echo date('Y'); ?>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -76,7 +73,7 @@
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
             <div class="post-preview">
-              <a href="post.html">
+              <a href="<?php the_permalink(); ?>">
                 <h2 class="post-title">
                   <?php the_title(); ?>
                 </h2>
@@ -85,7 +82,7 @@
                 </h3>
               </a>
               <p class="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <?php the_author(); ?>
                 on <?php the_time(get_option('date_format')); ?>
               </p>
             </div>
