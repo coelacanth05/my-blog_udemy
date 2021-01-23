@@ -73,7 +73,7 @@
   </article>
 
   <hr>
-  <?php get_template_part("includes/footer"); ?>
+  <?php get_template_part(); ?>
   <?php get_footer(); ?>
 </body>
 

@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <?php get_template_part("includes/header.php"); ?>
+  <?php get_template_part('includes/header'); ?>
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
     <div class="overlay"></div>
@@ -57,7 +57,7 @@
 
   <hr>
 
-  <?php get_template_part("includes/footer"); ?>
+  <?php get_template_part('includes/footer'); ?>
   <?php get_footer(); ?>
 </body>
 
