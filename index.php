@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+
   <?php get_header(); ?>
+
 </head>
 
 <body>
+
   <?php get_template_part('includes/header'); ?>
+
+
+
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
     <div class="overlay"></div>
@@ -14,7 +20,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Clean Blog<?php echo date('Y'); ?></h1>
+            <h1>Clean Blog <?php echo date('Y'); ?></h1>
             <span class="subheading">A Blog Theme by Start Bootstrap</span>
           </div>
         </div>
@@ -39,11 +45,11 @@
               </a>
               <p class="post-meta">Posted by
                 <?php the_author(); ?>
-                on <?php the_time(get_option('date_format')); ?>
-              </p>
+                on <?php the_time(get_option('date_format')); ?></p>
             </div>
             <hr>
           <?php endwhile; ?>
+
           <!-- Pager -->
           <div class="clearfix">
             <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
@@ -58,6 +64,7 @@
   <hr>
 
   <?php get_template_part('includes/footer'); ?>
+
   <?php get_footer(); ?>
 </body>
 
